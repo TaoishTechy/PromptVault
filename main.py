@@ -13,7 +13,7 @@ import tkinter.scrolledtext as st
 from typing import Optional, Dict, Any, Tuple
 from collections import defaultdict
 
-from psychological_engine import PsychologicalOrchestrator, ConfigLoader
+from psychological_engine import PsychologicalOrchestrator
 
 
 class PromptVaultApp:
@@ -22,7 +22,7 @@ class PromptVaultApp:
     def __init__(self, root: tk.Tk):
         self.root = root
         self.setup_app()
-        self.psych_orchestrator = PsychologicalOrchestrator()
+        self.psych_orchestrator = PsychologicalOrchestrator()  # FIXED: Removed Quantum prefix
         self.setup_ui()
         self.start_background_monitors()
 

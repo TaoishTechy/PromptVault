@@ -27,7 +27,58 @@ class ConfigLoader:
             with open(filename, 'r', encoding='utf-8') as f:
                 return json.load(f)
         except (FileNotFoundError, json.JSONDecodeError) as e:
-            raise RuntimeError(f"Failed to load {filename}: {str(e)}")
+            print(f"Warning: Could not load {filename}, using defaults. Error: {e}")
+            return self._create_default_config(filename)
+    
+    def _create_default_config(self, filename: str) -> Dict[str, Any]:
+        """Create default configuration for missing or invalid files."""
+        if "techniques" in filename:
+            return {
+                "stealth_techniques": {
+                    "lexical_density_cloaking": {"enabled": True, "stealth_score": 0.9},
+                    "fractal_pretexting": {"enabled": True, "stealth_score": 0.4},
+                    "syntactic_pressure_gradients": {"enabled": True, "stealth_score": 0.5},
+                    "zero_token_scaffolding": {"enabled": True, "stealth_score": 0.8}
+                },
+                "technique_sequence": [
+                    "fractal_pretexting",
+                    "lexical_density_cloaking", 
+                    "syntactic_pressure_gradients",
+                    "zero_token_scaffolding"
+                ]
+            }
+        else:
+            return {
+                "emotional_lexicon": {
+                    "urgency": ["now", "quick", "urgent"],
+                    "curiosity": ["wonder", "explore", "discover"],
+                    "creativity": ["create", "design", "innovate"],
+                    "focus": ["concentrate", "focus", "attention"]
+                },
+                "stealth_lexicon": {
+                    "urgency": ["imperative", "critical", "essential"],
+                    "authority": ["established", "verified", "validated"],
+                    "clarity": ["illuminated", "clarified", "resolved"]
+                },
+                "semantic_buffer": ["analysis", "assessment", "evaluation"],
+                "fractal_stories": {
+                    "precision": "A meticulous approach examines details carefully. ",
+                    "creativity": "Innovative thinking connects concepts creatively. "
+                },
+                "structural_templates": {
+                    "formal": "Analysis Request:\\n\\nObjective:\\n{content}\\n\\nApproach:"
+                },
+                "psych_profiles": {
+                    "analytical": {
+                        "emotional_tone": "clarity",
+                        "cognitive_state": "focus", 
+                        "interaction_mode": "precision"
+                    }
+                },
+                "emotional_themes": {
+                    "neutral": {"accent": "#4CAF50", "bg_tint": "#2b2b2b"}
+                }
+            }
     
     def get_emotional_lexicon(self) -> Dict[str, List[str]]:
         """Get emotional lexicon configuration."""
