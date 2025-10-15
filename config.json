@@ -1,0 +1,65 @@
+{
+  "emotional_lexicon": {
+    "urgency": ["now", "quick", "urgent", "asap", "immediately", "rush", "hurry", "deadline"],
+    "curiosity": ["wonder", "explore", "discover", "question", "curious", "investigate", "learn"],
+    "frustration": ["frustrating", "annoying", "problem", "issue", "stuck", "difficult", "hard"],
+    "creativity": ["create", "design", "build", "imagine", "innovate", "creative", "invent"],
+    "focus": ["concentrate", "focus", "attention", "deep work", "flow", "undisturbed"],
+    "overwhelm": ["overwhelming", "too much", "many", "lots", "multiple", "complex"]
+  },
+  "stealth_lexicon": {
+    "urgency": ["imperative", "critical", "essential", "primary", "foundational"],
+    "authority": ["established", "verified", "validated", "confirmed", "substantiated"],
+    "focus": ["concentrated", "directed", "channeled", "funneled", "streamlined"],
+    "clarity": ["illuminated", "clarified", "resolved", "distilled", "crystallized"],
+    "creativity": ["synthesized", "integrated", "connected", "bridged", "fused"]
+  },
+  "semantic_buffer": [
+    "analysis", "examination", "assessment", "evaluation", "consideration",
+    "perspective", "viewpoint", "framework", "context", "paradigm",
+    "methodology", "approach", "strategy", "technique", "procedure",
+    "implementation", "execution", "application", "deployment", "utilization"
+  ],
+  "fractal_stories": {
+    "precision": "A meticulous approach examines details carefully. ",
+    "creativity": "Innovative thinking connects concepts creatively. ",
+    "clarity": "Clear communication distills essential points. ",
+    "thoroughness": "Comprehensive analysis considers all aspects. "
+  },
+  "structural_templates": {
+    "formal": "Analysis Request:\\n\\nObjective:\\n{content}\\n\\nApproach:",
+    "systematic": "Systematic Analysis:\\n• Focus: {content}\\n• Considerations:\\n• Output Requirements:",
+    "authoritative": "Assessment Protocol\\n\\nSubject: {content}\\n\\nAnalysis Framework:"
+  },
+  "psych_profiles": {
+    "analytical": {
+      "emotional_tone": "clarity",
+      "cognitive_state": "focus",
+      "interaction_mode": "precision"
+    },
+    "creative": {
+      "emotional_tone": "creativity",
+      "cognitive_state": "breadth",
+      "interaction_mode": "creativity"
+    },
+    "strategic": {
+      "emotional_tone": "authority",
+      "cognitive_state": "depth",
+      "interaction_mode": "thoroughness"
+    },
+    "tactical": {
+      "emotional_tone": "urgency",
+      "cognitive_state": "focus",
+      "interaction_mode": "precision"
+    }
+  },
+  "emotional_themes": {
+    "urgency": {"accent": "#FF6B6B", "bg_tint": "#3a2b2b"},
+    "curiosity": {"accent": "#4ECDC4", "bg_tint": "#2b3a38"},
+    "frustration": {"accent": "#FFA726", "bg_tint": "#3a332b"},
+    "creativity": {"accent": "#9C27B0", "bg_tint": "#3a2b38"},
+    "focus": {"accent": "#66BB6A", "bg_tint": "#2b3a2c"},
+    "overwhelm": {"accent": "#7986CB", "bg_tint": "#2b2f3a"},
+    "neutral": {"accent": "#4CAF50", "bg_tint": "#2b2b2b"}
+  }
+}

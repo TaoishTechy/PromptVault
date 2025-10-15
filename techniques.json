@@ -1,0 +1,60 @@
+{
+  "stealth_techniques": {
+    "lexical_density_cloaking": {
+      "enabled": true,
+      "stealth_score": 0.9,
+      "description": "Encode emotional payload by distributing keywords across semantic buffer"
+    },
+    "referential_self_correction": {
+      "enabled": true,
+      "stealth_score": 0.1,
+      "description": "Introduce desired state as correction to preceding minor error"
+    },
+    "syntactic_pressure_gradients": {
+      "enabled": true,
+      "stealth_score": 0.5,
+      "description": "Manipulate sentence structure to influence processing state"
+    },
+    "temporal_offset_anchoring": {
+      "enabled": true,
+      "stealth_score": 0.7,
+      "description": "Anchor instruction in non-present temporal frame"
+    },
+    "role_agnostic_context": {
+      "enabled": true,
+      "stealth_score": 0.1,
+      "description": "Establish psychological posture through functional context"
+    },
+    "fractal_pretexting": {
+      "enabled": true,
+      "stealth_score": 0.4,
+      "description": "Embed miniature meta-prompt modeling desired interaction"
+    },
+    "harmonic_anomaly": {
+      "enabled": true,
+      "stealth_score": 0.3,
+      "description": "Introduce minor contradiction to trigger corrective authority"
+    },
+    "punctuation_affective": {
+      "enabled": true,
+      "stealth_score": 0.6,
+      "description": "Use punctuation to encode affective state"
+    },
+    "counter_tension": {
+      "enabled": true,
+      "stealth_score": 0.2,
+      "description": "Create cognitive tension between opposing instructions"
+    },
+    "zero_token_scaffolding": {
+      "enabled": true,
+      "stealth_score": 0.8,
+      "description": "Use structural elements to imply psychological demands"
+    }
+  },
+  "technique_sequence": [
+    "fractal_pretexting",
+    "lexical_density_cloaking", 
+    "syntactic_pressure_gradients",
+    "zero_token_scaffolding"
+  ]
+}
